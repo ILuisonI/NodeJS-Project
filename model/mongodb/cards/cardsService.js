@@ -19,10 +19,6 @@ const getCardsByUserId = (user_id) => {
   return Card.find({ user_id: user_id });
 };
 
-const getCardByBizNumber = (bizNumber) => {
-  return Card.findOne({ bizNumber }, { bizNumber: 1, _id: 0 });
-};
-
 const updateCard = (id, cardToUpdate) => {
   return Card.findByIdAndUpdate(id, cardToUpdate, {
     new: true,
