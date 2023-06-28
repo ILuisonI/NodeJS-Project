@@ -83,7 +83,6 @@ module.exports = {
   getAllCards,
   getCardById,
   getCardByUserId,
-  getCardByBizNumber,
   updateCard,
   deleteCard,
   likeCard,

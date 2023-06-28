@@ -45,7 +45,6 @@ module.exports = {
   getAllCards,
   getCardById,
   getCardsByUserId,
-  getCardByBizNumber,
   updateCard,
   deleteCard,
   likeCard,
