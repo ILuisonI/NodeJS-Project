@@ -1,6 +1,6 @@
 # User Commands:
 * Make a new user using POST: http://localhost:8181/api/users + a request body containing:
-`
+```
     "name":
     {
         "firstName" string, minimum length 2, maximum length 256, required,
@@ -25,7 +25,7 @@
         "alt" string, minimum length 2, maximum length 256, required,
         "url" string
     }
-`
+```
 
 * Login using POST: http://localhost:8181/api/users/login + request body containing:
 {
