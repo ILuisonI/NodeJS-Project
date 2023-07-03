@@ -1,5 +1,6 @@
 # User Commands:
 * Make a new user using POST: http://localhost:8181/api/users + a request body containing:
+
 {
     "name":
     {
