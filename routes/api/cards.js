@@ -72,7 +72,6 @@ router.put("/:id", async (req, res) => {
   try {
     const id = req.params.id;
     await idCardValidation({ id });
-    req.body = await cardsServiceModel.getCardById(req.params.id);
     let editedCard = normalizeCard(req.body);
     await createCardValidation(editedCard);
     await cardsServiceModel.updateCard(
